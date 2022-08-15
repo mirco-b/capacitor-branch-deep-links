@@ -103,7 +103,5 @@ export interface BranchDeepLinksPlugin {
     newIdentity: string;
   }): Promise<BranchReferringParamsResponse>;
   logout(): Promise<BranchLoggedOutResponse>;
-  getBranchQRCode(
-    options: BranchQRCodeParams,
-  ): Promise<BranchQRCodeResponse>;
+  getBranchQRCode(options: BranchQRCodeParams): Promise<BranchQRCodeResponse>;
 }
